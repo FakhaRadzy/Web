@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background-image: url(https://source.unsplash.com/1600x900/?nature);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 4), 0 6px 6px rgba(0, 0, 0, 2);
+    width: 400px;
+    animation: slideIn 2s ease-in-out;
+    margin: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .header h2 {
+        font-size: 36px;
+        color: #3c3d41;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #3c3d41;
+}
+
+input [type="text"],
+input [type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: dotted;
+    margin-top: 8px;
+}
+
+.btn {
+    background-color: #3c3d41;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: default;
+}
